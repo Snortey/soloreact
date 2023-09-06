@@ -1,0 +1,41 @@
+.carousel{
+    width: 100;
+    margin: 0.2rem 2rem;
+    
+}
+
+.carousel_wrapper{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height:100vh ;
+}
+.carousel_card{
+    width: 24rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    place-items: center;
+    text-align: center; 
+    border-radius: 2rem;
+    overflow: hidden;
+    user-select: none;
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+    transition: var(--transition);
+}
+.carousel_card-active{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+}
+
+.carousel_image{
+    width: 100;
+    object-fit: cover;
+}
