@@ -10,6 +10,7 @@
     border: 1px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
+    box-shadow: 0 1rem 1.5rem rgba(51, 100, 184, 0.424);
 }
 
 .service:hover{
@@ -17,6 +18,7 @@
     border-color: var(--color-primary-variant);
     cursor:default;
     backdrop-filter: blur(7px);
+    box-shadow: none;
 }
 
 .service_head{

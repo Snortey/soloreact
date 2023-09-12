@@ -1,16 +1,64 @@
 import React from 'react'
 import './services.css'
 import {BiCheck} from 'react-icons/bi'
+import {motion,variants} from "framer-motion"
+
+const textAnimate = {
+  offscreen:{y:-100, opacity: 0},
+  onscreen:{ y : 0, opacity: 1
+    //,rotate:[0,90,0]}
+    ,transition:{
+      type:"spring",
+      bounce:0.4,
+      duration:3}
+  }
+}
+const middleAnimate = {
+  offscreen:{y:-0, opacity: 0, },
+  onscreen:{ y : 0, opacity: 1
+    ,transition:{
+      type:"spring",
+      bounce:0.4,
+      duration:6}
+  }
+}
+
+const leftAnimate = {
+  offscreen:{x:100, opacity: 0},
+  onscreen:{ x : 0
+    , opacity: 1
+    ,transition:{
+      type:"spring",
+      bounce:0.4,
+      duration:3}
+  }
+}
+const rightAnimate = {
+  offscreen:{x:-100, opacity: 0},
+  onscreen:{ x : 0
+    , opacity: 1
+    ,transition:{
+      type:"spring",
+      bounce:0.4,
+      duration:3}
+  }
+}
+
 
 const services = () => {
   return (
-    <section id='services'>
-      <h5>What I offer</h5>
-      <h2>Services</h2>
+    <motion.section id='services'
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{once:true, amount:0.5}}
+        transition={{staggerChildren:0}}
+    >
+      <motion.h5 variants = {textAnimate}>What I offer</motion.h5>
+      <motion.h2 variants = {textAnimate}>Services</motion.h2>
 
-      <div className="container service_container">
+      <motion.div className="container service_container">
       {/* UI/UX */}
-        <article className="service">
+        <motion.article className="service" variants = {rightAnimate}>
           <div className="service_head">
             <h3>UI/UX Design</h3>
           </div>
@@ -18,32 +66,32 @@ const services = () => {
           <ul className="service_list">
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Visual Design</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Interaction Design</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>User Interface (UI) Prototyping</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Wireframing and Information Architecture</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Mobile App UI/UX</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Usability Audit and Analysis</p>
             </li>
           </ul>
-        </article>
+        </motion.article>
       {/* web development */}
-        <article className="service">
+        <motion.article className="service" variants = {middleAnimate}>
           <div className="service_head">
             <h3>Web Development</h3>
           </div>
@@ -51,40 +99,40 @@ const services = () => {
           <ul className="service_list">
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>HTML5/CSS3 Development</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Responsive Web Design</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>JavaScript Programming</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Frontend Frameworks</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Single Page Applications (SPAs)</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Cross-Browser Compatibility</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Version Control/Git</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Performance Optimization</p>
             </li>
           </ul>
-        </article>
+        </motion.article>
       {/* Embedded Systems */}
-        <article className="service">
+        <motion.article className="service" variants = {leftAnimate}>
           <div className="service_head">
             <h3>Embedded Systems</h3>
           </div>
@@ -92,32 +140,32 @@ const services = () => {
           <ul className="service_list">
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>IoT Solutions</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Sensor Integration</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Wireless Communication</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Real-time Data Acquisition</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Arduino Firmware Development</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Prototyping and Testing</p>
             </li>
           </ul>
-        </article>
-      </div>
-    </section>
+        </motion.article>
+      </motion.div>
+    </motion.section>
   )
 }
 

@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    
 }
 
 .experience_container > div {
@@ -19,6 +20,7 @@
     height: fit-content;
     width: fit-content;
     border: 1px solid transparent;
+    box-shadow: 0 1rem 1.5rem rgba(51, 100, 184, 0.424);
 }
 
 .experience_container > div:hover {
@@ -26,6 +28,7 @@
     border-color: var(--color-primary-variant);
     cursor: default;
     backdrop-filter: blur(7px);
+    box-shadow:none;
 }
 
 .experience_container > div h3{

@@ -7,7 +7,30 @@ import IMG4 from '../../Assets/snake game.png'
 import IMG5 from '../../Assets/Screenshot 2023-08-02 085036.png'
 import IMG6 from '../../Assets/csedu.png'
 import IMG7 from '../../Assets/Assembled component.jpg'
+import {motion,variants} from "framer-motion"
 
+const contentAnimate = {
+  offscreen:{y:-100, opacity: 0},
+  onscreen:{ y : 0
+    , opacity: 1
+    //,rotate:[0,90,0]}
+    ,transition:{
+      type:"spring",
+      bounce:0.4,
+      duration:3}
+  }
+}
+
+const textAnimate = {
+  offscreen:{y:-100, opacity: 0},
+  onscreen:{ y : 0, opacity: 1
+    //,rotate:[0,90,0]}
+    ,transition:{
+      type:"spring",
+      bounce:0.4,
+      duration:3}
+  }
+}
 
 const data = [
   {
@@ -63,11 +86,17 @@ const data = [
 
 const portfolio = () => {
   return (
-    <section id='portfolio'>
+    <section id='portfolio'
+        // initial={"offscreen"}
+        // whileInView={"onscreen"}
+        // viewport={{once:false, amount:0.5}}
+        // transition={{staggerChildren:0}}
+    >
       <h5>My Recent Works</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio_container">
+      <div className="container portfolio_container"
+      >
         {
           data.map(({id, image, title, github, demo}) => {
             return(
@@ -76,15 +105,15 @@ const portfolio = () => {
                   <img src={image} alt={title}/>
                 </div>
                 <h3>{title}</h3>
-              <div className="portfolio_item-cta">
+                <div className="portfolio_item-cta">
                   <a href={github} className='btn' target='_blank'>Github</a>
                   <a href={demo} className='btn btn-primary' target='_blank'>Demo</a>
-              </div>
-        </article>
+                </div>
+              </article>
             )
           })
         }
-      </div>
+      </div> 
     </section>
   )
 }
