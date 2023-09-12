@@ -18,7 +18,7 @@ import 'swiper/css/navigation';
 const data =[
   {
     avatar: AVATAR1,
-    name: 'Joseph Delali',
+    name: 'Joseph Etse',
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum suscipit minima hic illo dolor saepe repellendus, iusto magnam, placeat rerum ducimus consequuntur rem distinctio velit vel perferendis enim veniam.',
   },
   {
