@@ -48,7 +48,7 @@ const imageAnimate2 = {
   offscreen:{x:-100, opacity: 0},
   onscreen:{ x : 0
     , opacity: 1
-    ,rotate:[0,360]
+    ,rotate:[0,180]
     ,transition:{
       // type:"spring",
       // bounce:0.4,
