@@ -81,7 +81,7 @@ const Contact = () => {
         <motion.article className="contact_option" variants = {leftAnimate}>
           <BsWhatsapp className='contact-icon'/>
           <h4>Whatsapp</h4>
-          <h5>+23355 103 1778</h5>
+          <h5>+233551031778</h5>
           <a href="http://wa.me/+233551031778" target='_blank'> Send a message</a>
         </motion.article>
       </motion.div>
