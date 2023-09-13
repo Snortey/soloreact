@@ -19,7 +19,7 @@ const data =[
   {
     avatar: AVATAR1,
     name: 'Joseph Etse',
-    review: 'My collaboration with Solomon left me thoroughly impressed. They masterfully combined different set of skills, ensuring our project looked fantastic and functioned flawlessly. Solomon is the ultimate creative technologist.',
+    review: 'My collaboration with Solomon left me thoroughly impressed. Ensuring our project looked fantastic and functioned flawlessly. Solomon is the ultimate creative technologist.',
   },
   {
     avatar: AVATAR2,
@@ -29,12 +29,12 @@ const data =[
   {
     avatar: AVATAR3,
     name: 'Isaac Kwarteng',
-    review: "I've had the pleasure of witnessing Solomon's exceptional skills firsthand. He sets the standard high in every domain he touches.",
+    review: "I've had the pleasure of witnessing Solomon's exceptional skills firsthand. He sets the standard high in every domain he touches.He is truly a rare talent",
   },
   {
     avatar: AVATAR4,
     name: 'Papa Arhin',
-    review: "As someone passionate about UX, I'm in awe of Solomon's ability to craft simple, user-centric designs. He excel as a UI/UX designer and frontend developer, creating experiences that are both elegant and functional. Solomon is truly a rare talent.",
+    review: "As someone passionate about UX, I'm in awe of Solomon's ability to craft simple, user-centric designs. Creating experiences that are both elegant and functional.",
   }
 ]
 
