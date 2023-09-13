@@ -28,7 +28,7 @@ const headersocials = () => {
         <motion.a href="https://github.com/Snortey" target="_blank"
           variants = {socialIcons}
         ><BsGithub/></motion.a>
-        <motion.a href="https://api.whatsapp.com/send?phone=+233551031778"target="_blank"
+        <motion.a href="http://wa.me/+233551031778"target="_blank"
           variants = {socialIcons}
         ><BsWhatsapp/></motion.a>
     </motion.div>

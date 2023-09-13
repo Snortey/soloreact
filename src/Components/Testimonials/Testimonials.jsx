@@ -19,22 +19,22 @@ const data =[
   {
     avatar: AVATAR1,
     name: 'Joseph Etse',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum suscipit minima hic illo dolor saepe repellendus, iusto magnam, placeat rerum ducimus consequuntur rem distinctio velit vel perferendis enim veniam.',
+    review: 'My collaboration with Solomon left me thoroughly impressed. They masterfully combined different set of skills, ensuring our project looked fantastic and functioned flawlessly. Solomon is the ultimate creative technologist.',
   },
   {
     avatar: AVATAR2,
     name: 'Gilbert Amo',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum suscipit minima hic illo dolor saepe repellendus, iusto magnam, placeat rerum ducimus consequuntur rem distinctio velit vel perferendis enim veniam.',
+    review: '"Having worked alongside Solomon for several years, I am continuously amazed by his versatility. creating stunning and functional interfaces. His impact on every project is undeniable.',
   },
   {
     avatar: AVATAR3,
     name: 'Isaac Kwarteng',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum suscipit minima hic illo dolor saepe repellendus, iusto magnam, placeat rerum ducimus consequuntur rem distinctio velit vel perferendis enim veniam.',
+    review: "I've had the pleasure of witnessing Solomon's exceptional skills firsthand. He sets the standard high in every domain he touches.",
   },
   {
     avatar: AVATAR4,
     name: 'Papa Arhin',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum suscipit minima hic illo dolor saepe repellendus, iusto magnam, placeat rerum ducimus consequuntur rem distinctio velit vel perferendis enim veniam.',
+    review: "As someone passionate about UX, I'm in awe of Solomon's ability to craft simple, user-centric designs. He excel as a UI/UX designer and frontend developer, creating experiences that are both elegant and functional. Solomon is truly a rare talent.",
   }
 ]
 

@@ -82,7 +82,7 @@ const Contact = () => {
           <BsWhatsapp className='contact-icon'/>
           <h4>Whatsapp</h4>
           <h5>+23355 103 1778</h5>
-          <a href="https://api.whatsapp.com/send?phone=+233551031778" target='_blank'> Send a message</a>
+          <a href="http://wa.me/+233551031778" target='_blank'> Send a message</a>
         </motion.article>
       </motion.div>
       <motion.form ref={form} onSubmit={sendEmail}
