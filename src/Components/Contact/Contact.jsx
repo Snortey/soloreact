@@ -69,7 +69,7 @@ const Contact = () => {
         <motion.article className="contact_option" variants = {leftAnimate}>
           <MdOutlineEmail className='contact-icon' />
           <h4>Email</h4>
-          <h5>sammyzane100@gmail.com</h5>
+          <h5>kelvinnortey100@gmail.com</h5>
           <a href="mailto:kelvinnortey100@gmail.com" target='_blank'> Send a message</a>
         </motion.article>
         <motion.article className="contact_option" variants = {leftAnimate}>
@@ -81,7 +81,7 @@ const Contact = () => {
         <motion.article className="contact_option" variants = {leftAnimate}>
           <BsWhatsapp className='contact-icon'/>
           <h4>Whatsapp</h4>
-          <h5>+233 454 4677</h5>
+          <h5>+23355 103 1778</h5>
           <a href="https://api.whatsapp.com/send?phone=+233551031778" target='_blank'> Send a message</a>
         </motion.article>
       </motion.div>

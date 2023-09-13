@@ -37,14 +37,14 @@ const data = [
     id: 1,
     image: IMG1,
     title: 'Illustration Of Africa - ClipsStudio',
-    github: 'https://github.com',
-    demo: '../../Assets/AfricaArt.png'
+    github: 'https://github.com/Snortey/Africa-Illustration',
+    demo: 'https://github.com/Snortey/Africa-Illustration/blob/main/AfricaArt.png'
   },
   {
     id: 2,
     image: IMG2,
     title: 'Votex365 frontend',
-    github: 'https://github.com',
+    github: 'https://github.com/Snortey/VotexFrontend',
     demo: 'https://www.votex365.com/'
   },
   {
@@ -52,35 +52,35 @@ const data = [
     image: IMG3,
     title: 'Arduino Water level management system',
     github: 'https://github.com/Snortey/water-level-managment-system',
-    demo: '../../Assets/WaterlevelManagement_system.jpg'
+    demo: 'https://github.com/Snortey/water-level-managment-system/blob/main/Screenshots/IMG_20220924_183034_078.jpg'
   },
   {
     id: 4,
     image: IMG4,
     title: 'Snake game with Python',
     github: 'https://github.com/Snortey/Snake-game',
-    demo: '../../Assets/snake game.png'
+    demo: 'https://github.com/Snortey/Snake-game/blob/main/snake%20game.png'
   },
   {
     id: 5,
     image: IMG5,
     title: 'DogCo-frontend',
     github: 'https://github.com/Snortey/DogCo-frontend',
-    demo: '../../Assets/Screenshot 2023-08-02 085036.png'
+    demo: 'https://github.com/Snortey/DogCo-frontend/blob/main/Screenshot%202023-08-02%20085036.png'
   },
   {
     id: 6,
     image: IMG6,
     title: 'CSEDU Frontend',
     github: 'https://github.com/Snortey/CSEDU',
-    demo: '../../Assets/csedu.png'
+    demo: 'https://github.com/Snortey/CSEDU/blob/main/csedu.png'
   },
   {
     id: 7,
     image: IMG7,
     title: 'Automated Obstacle Avoidance and Path Following Robot',
     github: 'https://github.com/Snortey/Obstacle-avoidance-and-path-following-robot',
-    demo: '../../Assets/Assembled component.jpg'
+    demo: 'https://github.com/Snortey/Obstacle-avoidance-and-path-following-robot/blob/main/Assembled%20component.jpg'
   }
 ]
 
