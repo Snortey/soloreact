@@ -68,9 +68,8 @@ const Header = () => {
         <span style={{color:'#014fd5', fontSize: '28px', fontWeight: 'bold'}}>
           <Cursor cursorStyle ='|' />
         </span>
-        <CTA />
+        
         <HeaderSocial />
-
         <motion.div className="me"
           // initial={{x:-100}}  
           // animate={{ x : 0
@@ -92,7 +91,7 @@ const Header = () => {
             }}
            />
         </motion.div>
-
+        <CTA />
         <motion.a href="#contact" className='scroll_down'
           variants = {scrollAnimate}
         >Scroll Down</motion.a>
