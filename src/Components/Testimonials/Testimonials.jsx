@@ -49,6 +49,7 @@ const textAnimate = {
   }
 }
 const Testimonials = () => {
+  
   return (
     <motion.section id='testimonials'
         initial={"offscreen"}
